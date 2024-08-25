@@ -16,3 +16,9 @@ This project showcases an interactive navigation menu with a gradient background
 - **HTML:** Structures the navigation menu and the content sections.
 - **CSS:** Provides styling, including gradient backgrounds, hover effects, and responsive design.
 - **JavaScript:** Adds interactivity by changing the background color of the navigation bar when the user scrolls down the page.
+
+## Website Link
+
+Visit the Site: [https://sohini9742.github.io/PRODIGY_WD_01/](https://sohini9742.github.io/PRODIGY_WD_01/)
+
+Feel free to explore the code and try it out!
