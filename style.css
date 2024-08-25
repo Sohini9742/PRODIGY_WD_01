@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* For scrolling effect */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #0066ff, #33ccff); /* Blue gradient */
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+nav.scrolled {
+    background: linear-gradient(90deg, #ff6600, #ffcc33); /* Orange gradient */
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+section#home {
+    background: #0066ff;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about,
+section#services,
+section#contact {
+    background: #f4f4f4;
+    margin-top: 50px;
+}
